@@ -125,4 +125,7 @@
   .empresa-texto {
     font-size: 0.75rem;
   }
+  .empresa-titulo-none {
+    display: none;
+  }
 }
