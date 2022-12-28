@@ -44,11 +44,50 @@ img {
   max-width: 4ch;
 }
 
+video {
+  width: 300px;
+  border-radius: 4px;
+  justify-self: center;
+}
+
+.video-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-projeto {
+  text-align: center;
+  place-self: end;
+  background-color: #736253;
+  color: #f2f2f2;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.link-projeto:hover {
+  background-color: #a6886d;
+}
+
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;
     max-width: initial;
     text-align: center;
+  }
+}
+
+@media (max-width: 530px) {
+  .video-grid {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .link-projeto {
+    place-self: center;
+  }
+  video {
+    place-self: center;
   }
 }
 

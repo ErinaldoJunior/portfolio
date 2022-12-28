@@ -39,6 +39,27 @@
   color: #736253;
 }
 
+.redes {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redes-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.redes-grid img {
+  width: 30px;
+  transition: 0.4s;
+}
+
+.redes-grid img:hover {
+  transform: scale(1.3);
+}
+
 @media (max-width: 800px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -57,5 +78,8 @@
 @media (max-width: 400px) {
   .footer {
     text-align: center;
+  }
+  .footer-container {
+    padding: 60px 30px;
   }
 }
