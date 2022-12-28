@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background-color: #f2f2f2;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.projeto {
+  font-weight: bold;
+  color: #26150f;
+  transition: 0.5s;
+}
+
+.projeto:hover {
+  color: #a6886d;
+}
+
+.subtitulo {
+  font-size: 10rem;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase;
+  max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    max-width: initial;
+    text-align: center;
+  }
+}
+
+/* Color Theme Swatches in Hex */
+.UI/UX-1-hex {
+  color: #a6886d;
+}
+.UI/UX-2-hex {
+  color: #736253;
+}
+.UI/UX-3-hex {
+  color: #26150f;
+}
+.UI/UX-4-hex {
+  color: #593a2e;
+}
+.UI/UX-5-hex {
+  color: #f2f2f2;
+}
