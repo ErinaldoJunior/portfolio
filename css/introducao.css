@@ -12,29 +12,18 @@
 }
 
 .introducao h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
+  font-weight: bold;
   line-height: 80px;
   margin-bottom: 30px;
-  color: #26150f;
-  position: relative;
-}
-
-.introducao h1::before {
-  content: "";
-  display: block;
-  width: 130px;
-  height: 130px;
-  background-image: url(../img/detalhe.svg);
-  position: absolute;
-  left: -40px;
-  top: -30px;
-  z-index: -1;
+  color: #f2c438;
+  text-transform: uppercase;
 }
 
 .introducao p {
-  color: #a6886d;
+  color: #f2f2f2;
   text-align: start;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 1000px) {
@@ -66,7 +55,7 @@
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   .introducao h1 {
     text-transform: uppercase;
     text-align: center;
