@@ -73,6 +73,7 @@
   .experiencia {
     grid-template-columns: 1fr;
     gap: 50px;
+    margin-top: 50px;
   }
 
   .experiencia .subtitulo {
@@ -88,6 +89,7 @@
 @media (max-width: 600px) {
   .experiencia {
     gap: 50px;
+    margin-top: 10px;
   }
   .empresa {
     grid-template-columns: 1fr;
