@@ -63,3 +63,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+const site = document.querySelector(".site");
+const entrar = document.querySelector(".entrar");
+
+function showSite(event) {
+  event.preventDefault();
+  site.classList.add("show");
+  entrar.style.display = "none";
+}
+
+entrar.addEventListener("click", showSite);

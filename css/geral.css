@@ -91,19 +91,59 @@ video {
   }
 }
 
-/* Color Theme Swatches in Hex */
-.UI/UX-1-hex {
-  color: #a6886d;
+.entrar {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.UI/UX-2-hex {
-  color: #736253;
+
+.entrar a {
+  padding: 20px;
 }
-.UI/UX-3-hex {
-  color: #26150f;
+.entrar a:hover {
+  animation: shake 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  perspective: 1000px;
 }
-.UI/UX-4-hex {
-  color: #593a2e;
+
+.site {
+  display: none;
+  animation: entrar 1s forwards;
 }
-.UI/UX-5-hex {
-  color: #f2f2f2;
+.site.show {
+  display: initial;
+}
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(2px, 0, 0);
+  }
 }
