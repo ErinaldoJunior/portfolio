@@ -91,29 +91,9 @@ video {
   }
 }
 
-.entrar {
-  height: 100vh;
-  display: grid;
-  place-content: center;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.entrar a {
-  padding: 20px;
-}
-.entrar a:hover {
-  animation: shake 0.9s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-  transform: translate3d(0, 0, 0);
-  perspective: 1000px;
-}
-
 .site {
-  display: none;
+  display: block;
   animation: entrar 1s forwards;
-}
-.site.show {
-  display: initial;
 }
 
 @keyframes entrar {
