@@ -26,15 +26,6 @@ img {
   display: block;
 }
 
-.projeto {
-  font-weight: bold;
-  color: #f2c438;
-  transition: 0.5s;
-}
-
-.projeto:hover {
-  color: red;
-}
 
 .subtitulo {
   font-size: 6rem;
@@ -44,50 +35,11 @@ img {
   text-align: center;
 }
 
-video {
-  width: 500px;
-  border-radius: 4px;
-  justify-self: center;
-}
-
-.video-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.link-projeto {
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  place-self: end;
-  color: #0d0d0d;
-  padding: 20px 30px;
-  border-radius: 4px;
-  transition: 0.4s;
-}
-
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;
     max-width: initial;
     text-align: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .video-grid {
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-  }
-  .link-projeto {
-    place-self: center;
-    font-size: 0.75rem;
-  }
-  video {
-    place-self: center;
-    width: 250px;
   }
 }
 
