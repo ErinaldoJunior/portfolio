@@ -95,6 +95,13 @@
   border-radius: 4px;
   transition: 0.4s;
 }
+@media (max-width: 960px) {
+  .empresa-habilidade {
+    place-self: center end;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 
 @media (max-width: 800px) {
@@ -123,6 +130,9 @@
   }
   .habilidades-none {
     display: none;
+  }
+  .empresa-habilidade {
+    flex-direction: initial;
   }
 }
 
