@@ -48,6 +48,11 @@
   text-transform: uppercase;
 }
 
+.grid-skills {
+  display: grid;
+  gap: 20px;
+}
+
 .Skills {
   justify-self: center;
   font-size: 1.5rem;
@@ -123,14 +128,17 @@
     flex-direction: column;
   }
   .video-empresa {
-    width: 200px;
+    width: 250px;
     justify-self: center;
   }
   .empresa-texto {
     font-size: 1rem;
   }
   .grid-empresa-2 {
+    display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
   }
 
   .grid-empresa-1 {
@@ -162,8 +170,13 @@
 
   .link-projeto {
     font-size: .875rem;
-    padding: 5px 10px;
+    padding: 20px 15px;
     justify-self: center;
+  }
+
+  .grid-skills {
+    display: grid;
+    gap: 10px;
   }
 }
 
@@ -171,4 +184,5 @@
   .grid-empresa {
     width: 300px;
   }
+
 }
