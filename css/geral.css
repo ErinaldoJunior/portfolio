@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-image: linear-gradient( 112.1deg,  rgba(32,38,57,1) 11.4%, rgba(63,76,119,1) 70.2% );
-  font-family: "Press Start 2P", cursive;
+  background-color: #0D0D0D;
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -13,6 +13,7 @@ p {
 
 a {
   text-decoration: none;
+  color: #f2f2f2;
 }
 
 ul {
@@ -26,37 +27,16 @@ img {
   display: block;
 }
 
-
-.subtitulo {
-  font-size: 6rem;
-  line-height: 1;
-  word-break: break-all;
-  text-transform: uppercase;
+.container-titulo {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 60px;
+}
+.container-titulo h1 {
+  color: #f2f2f2;
   text-align: center;
-}
-
-@media (max-width: 800px) {
-  .subtitulo {
-    font-size: 3rem;
-    max-width: initial;
-    text-align: center;
-  }
-}
-
-.site {
-  display: block;
-  animation: entrar 1s forwards;
-}
-
-@keyframes entrar {
-  from {
-    opacity: 0;
-    transform: translate3d(-40px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+  text-transform: uppercase;
+  font-size: 4rem;
 }
 
 @keyframes shake {
@@ -78,4 +58,18 @@ img {
   60% {
     transform: translate3d(2px, 0, 0);
   }
+}
+
+.btn-grad {
+  background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+  margin: 10px;
+  text-align: center;
+  transition: 0.7s;
+  background-size: 200% auto;
+  border-radius: 4px;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  text-decoration: none;
 }
