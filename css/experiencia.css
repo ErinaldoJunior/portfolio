@@ -168,7 +168,7 @@
     align-self: center;
   }
 
-  .link-projeto {
+  .link-projeto a {
     font-size: .875rem;
     padding: 30px 15px;
     justify-self: center;
