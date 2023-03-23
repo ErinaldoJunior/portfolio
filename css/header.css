@@ -63,6 +63,7 @@
   animation: show-up .2s forwards;
 }
 
+
 @media (max-width: 800px) {
   .header {
     gap: 40px;
