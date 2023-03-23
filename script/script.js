@@ -276,8 +276,8 @@ slide.init();
 
 ///////////////////////////////////////////////////////////////////////////
 
-const menuLogo = document.querySelector('.logo-menu');
-const menu = document.querySelector('.menu-mobile');
+const menuLogo = document.querySelectorAll('.logo-menu');
+const menu = document.querySelectorAll('.menu-mobile');
 
 function ativarMenu(event) {
   event.preventDefault();
