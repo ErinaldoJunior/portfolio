@@ -13,6 +13,7 @@
   text-transform: uppercase;
   line-height: 1;
   width: 10ch;
+  text-align: start;
 }
 
 .titulo-principal:after{
