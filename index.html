@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvedor e Designer localizado no Porto.">
   <title>Erinaldo Junior - Portfólio</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,159 +13,234 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets2/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets2/css/themify-icons.css" />
+  <link rel="stylesheet" href="./assets2/css/accordion.css" />
+  <link rel="stylesheet" href="./assets2/css/owl.carousel.min.css" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="./assets2/css/style.css" />
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <img class="logo" src="./img/logo.png" alt="">
-    <nav>
-      <ul class="menu-mobile">
-        <li><a href="#work">work</a></li>
-        <li><a href="./about.html">About me</a></li>
-        <li><a href="./resume.pdf" download>Resume</a></li>
-      </ul>
+  <header>
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+      <div class="container py-3 py-md-4">
+        <div class="row align-items-center">
+          <div class="col">
+            <ul class="custom-menu">
+              <li class="active"><a href="index.html">home</a></li>
+              <li><a href="#work">work</a></li>
+              <li><a href="./about.html">about me</a></li>
+              <li><a href="./resume.pdf" download>resume</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <nav class="navbar navbar-light custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">erinaldo junior.</a>
+        <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+          <span></span>
+        </a>
+      </div>
     </nav>
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#work">work</a></li>
-        <li><a href="./about.html">About me</a></li>
-        <li><a href="./resume.pdf" download>Resume</a></li>
-      </ul>
-    </nav>
-    <img class="logo-menu" src="./img/menu.png" alt="">
+
   </header>
+
+
   <section class="container-intro">
     <h1 class="titulo-principal">Junior Front-End Developer</h1>
   </section>
-  <section class="js-menu" id="work">
-    <ul class="custom-control">
-      <li><img src="./img/thumb/1.png" alt=""></li>
-      <li><img src="./img/thumb/2.png" alt=""></li>
-      <li><img src="./img/thumb/3.png" alt=""></li>
-      <li><img src="./img/thumb/4.png" alt=""></li>
-      <li><img src="./img/thumb/5.png" alt=""></li>
-    </ul>
-    <div class="container-slide">
-      <ul class="slide">
-        <li>
-          <div class="bg grid-empresa">
-            <div class="grid-empresa-1">
-              <h3 class="empresa-titulo">Yves</h3>
-              <p class="empresa-texto">Project created to apply knowledge in mobile menu, form and UI Design.</p>
-              <video class="video-empresa" controls loop src="./video/yves.mp4"></video>
-            </div>
-            <div class="grid-empresa-2">
-              <div class="grid-skills">
-                <span class="Skills Skills-none">Skills</span>
-                <ul class="empresa-habilidade">
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <a class="link-projeto btn-grad" href="https://erinaldojunior.github.io/yves" target="_blank">View more</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="bg grid-empresa">
-            <div class="grid-empresa-1">
-              <h3 class="empresa-titulo">Fundamentos em C</h3>
-              <p class="empresa-texto">Project developed for the Fundamentals in C course at IEFP.</p>
-              <video class="video-empresa" controls loop src="./video/cursoc.mp4"></video>
-            </div>
-            <div class="grid-empresa-2">
-              <div class="grid-skills">
-                <span class="Skills Skills-none">Skills</span>
-                <ul class="empresa-habilidade">
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <a class="link-projeto btn-grad" href="https://erinaldojunior.github.io/cursoc/" target="_blank">View more</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="bg grid-empresa">
-            <div class="grid-empresa-1">
-              <h3 class="empresa-titulo">Basssket</h3>
-              <p class="empresa-texto">Personal project created to improve knowledge in animations with JavaScript.</p>
-              <video class="video-empresa" controls loop src="./video/basssket.mp4"></video>
-            </div>
-            <div class="grid-empresa-2">
-              <div class="grid-skills">
-                <span class="Skills Skills-none">Skills</span>
-                <ul class="empresa-habilidade">
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <a class="link-projeto btn-grad" href="https://erinaldojunior.github.io/basssket" target="_blank">View more</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="bg grid-empresa">
-            <div class="grid-empresa-1">
-              <h3 class="empresa-titulo">NOWAR</h3>
-              <p class="empresa-texto">The project was created to apply knowledge in modal, mobile menu and dropdown.</p>
-              <video class="video-empresa" controls loop src="./video/nowar.mp4"></video>
-            </div>
-            <div class="grid-empresa-2">
-              <div class="grid-skills">
-                <span class="Skills Skills-none">Skills</span>
-                <ul class="empresa-habilidade">
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <a class="link-projeto btn-grad" href="https://erinaldojunior.github.io/nowar/" target="_blank">View more</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="bg grid-empresa">
-            <div class="grid-empresa-1">
-              <h3 class="empresa-titulo">Paulista Foods</h3>
-              <p class="empresa-texto">In this project I applied the knowledge acquired in the Web Design course.</p>
-              <video class="video-empresa" controls loop src="./video/paulistafoods.mp4"></video>
-            </div>
-            <div class="grid-empresa-2">
-              <div class="grid-skills">
-                <span class="Skills Skills-none">Skills</span>
-                <ul class="empresa-habilidade">
-                  <li>CSS</li>
-                  <li>HTML</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
-              <a class="link-projeto btn-grad" href="https://erinaldojunior.github.io/paulistafoods" target="_blank">View more</a>
-            </div>
-          </div>
-        </li>
-      </ul>
+
+  <section class="hero-section">
+    <div class="container" id="work">
+      <p class="text-dark fs-3 pb-4">work.</p>
     </div>
-    <div class="arrow-nav">
-      <button id="prev"></button>
-      <button id="next"></button>
+    <div class="pana-accordion" id="accordion">
+      <div class="pana-accordion-wrap">
+        <div class="pana-accordion-item set-bg" data-setbg="./img/1.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/paulistafoods/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+            #F2BF27">Paulista Foods</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="pana-accordion-item set-bg" data-setbg="img/2.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/cursoc/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">CURSO - Fundamentos Em C</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"> <em>Projeto desenvolvido em parceria com o professor Igor Lima para o curso de programação em C do IEFP. Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="pana-accordion-item set-bg" data-setbg="img/3.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/yves/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">Yves</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="pana-accordion-item set-bg" data-setbg="img/4.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/nowar/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">NOWAR</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="pana-accordion-item set-bg" data-setbg="img/5.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/logicadopc/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">Lógica dos computadores</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Primeiro projeto utilizando o Bootstrap.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="pana-accordion-item set-bg" data-setbg="img/6.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/basssket/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">Basssket</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slider-warp">
+      <div class="hero-slider owl-carousel">
+
+        <div class="hero-item set-bg" data-setbg="img/1.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/paulistafoods/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+            #F2BF27">Paulista Foods</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-item set-bg" data-setbg="img/2.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/cursoc/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">CURSO - Fundamentos Em C</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"> <em>Projeto desenvolvido em parceria com o professor Igor Lima para o curso de programação em C do IEFP. Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="hero-item set-bg" data-setbg="img/3.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/yves/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">Yves</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="hero-item set-bg" data-setbg="img/4.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/nowar/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">NOWAR</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+        <div class="hero-item set-bg" data-setbg="img/5.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/logicadopc/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">Lógica dos computadores</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Primeiro projeto utilizando o Bootstrap.</em></h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-item set-bg" data-setbg="img/6.jpg">
+          <div class="pa-text">
+            <div class="pa-tag"><a href="https://erinaldojunior.github.io/basssket/" target="_blank">Visit WebSite</a></div>
+            <h3 class="text-uppercase" style="color:
+          #F2BF27">Basssket</h3>
+            <div class="pa-author">
+              <h5 class="text-white pt-3"><em>Criado com HTML, CSS e JavaScript. Não foi utilizado nenhum framework.</em></h5>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footer-container">
-      <p>Copyright © Erinaldo Junior</p>
-      <div class="redes-grid">
-        <a href="https://www.instagram.com/eri.frontend/" target="_blank"><img src="./img/redes/instagram.png" alt=""></a>
-        <a href="https://github.com/ErinaldoJunior" target="_blank"><img src="./img/redes/github.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/erinaldo-junior-70ab6725b/" target="_blank"><img src="./img/redes/linkedin.png" alt=""></a>
-      </div>
 
-    </div>
+  <footer class="footer py-3" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center text-center">
+
+        <div class="col-12 col-md-6">
+          <p class="text-dark">&copy; Copyright Erinaldo Junior. All Rights Reserved</p>
+        </div>
+        <div class="col-12 col-md-6 social">
+          <a href="https://github.com/ErinaldoJunior" target="_blank"><span class="bi bi-github"></span></a>
+          <a href="https://www.instagram.com/eri.frontend/" target="_blank"><span class="bi bi-instagram"></span></a>
+          <a href="https://www.linkedin.com/in/erinaldo-junior-70ab6725b/" target="_blank"><span class="bi bi-linkedin"></span></a>
+        </div>
+
+      </div>
   </footer>
+  <!-- Vendor JS Files -->
   <script src="./script/script.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="./assets2/js/vendor/jquery-3.2.1.min.js"></script>
+  <script src="./assets2/js/bootstrap.min.js"></script>
+  <script src="./assets2/js/owl.carousel.min.js"></script>
+  <script src="./assets2/js/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets2/js/isotope.pkgd.min.js"></script>
+  <script src="./assets2/js/jquery.nicescroll.min.js"></script>
+  <script src="./assets2/js/circle-progress.min.js"></script>
+  <script src="./assets2/js/pana-accordion.js"></script>
+  <script src="./assets2/js/main.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -3,16 +3,16 @@
   max-width: 1200px;
   padding: 20px;
   height: 370px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .titulo-principal {
-  color: #f2f2f2;
-  font-size: 
-  6rem;
+  color: #0D0D0D;
+  font-size: 7rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1;
-  width: 10ch;
   text-align: start;
 }
 
@@ -36,16 +36,18 @@
 
 
 @media (max-width: 800px) {
-  .container-intro h1 {
+  .titulo-principal {
     font-size: 4rem;
-  }
-  .container-intro {
-    height: 270px;
   }
 }
 
 @media (max-width: 430px) {
-  .container-intro h1 {
+  .titulo-principal {
     font-size: 3rem;
+  }
+  .container-intro {
+  
+    margin-top: 80px;
+    margin-bottom: 0px;
   }
 }

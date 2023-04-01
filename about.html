@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Desenvolvedor e Designer localizado no Porto.">
   <title>About Me</title>
-  <link rel="stylesheet" href="./css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -14,47 +13,160 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets2/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./assets2/css/themify-icons.css" />
+  <link rel="stylesheet" href="./assets2/css/accordion.css" />
+  <link rel="stylesheet" href="./assets2/css/owl.carousel.min.css" />
+
+  <!-- Main Stylesheets -->
+  <link rel="stylesheet" href="./assets2/css/style.css" />
+
+  <!-- Template Main CSS File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header class="header">
-    <img class="logo" src="./img/logo.png" alt="">
-    <nav>
-      <ul class="menu-mobile">
-        <li><a href="./index.html">home</a></li>
-        <li><a href="./resume.pdf" download>Resume</a></li>
-      </ul>
-    </nav>
-    <nav>
-      <ul class="header-menu">
-        <li><a href="./index.html">home</a></li>
-        <li><a href="./resume.pdf" download>Resume</a></li>
-      </ul>
-    </nav>
-    <img class="logo-menu" src="./img/menu.png" alt="">
-  </header>
-  <section class="about">
-    <div class="grid-about">
-      <h1>Hi, I am Erinaldo Junior 👋</h1>
-      <p>I love front end and Ux Design. I value a clean, minimalist and objective design. I seek to specialize and improve my knowledge every day. I have knowledge of some programming languages, such as: CSS, JavaScript and C. I am currently taking the UX Design course at Google and the Programmer course at the IEFP. I am ready to join your team. Let's go?</p>
-      <div class="redes">
-        <a href="https://www.linkedin.com/in/erinaldo-junior-70ab6725b/" target="_blank"><img src="./img/redes/linkedin.png" alt=""></a>
-        <a href="https://github.com/ErinaldoJunior" target="_blank"><img src="./img/redes/github.png" alt="logo github"></a>
-        <a href="https://www.instagram.com/eri.frontend/" target="_blank"><img src="./img/redes/instagram.png" alt="logo instagram"></a>
+  <header>
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+      <div class="container py-2 py-md-4">
+        <div class="row align-items-center">
+          <div class="col">
+            <ul class="custom-menu">
+              <li><a href="index.html">home</a></li>
+              <li class="active"><a href="./about.html">about me</a></li>
+              <li><a href="./resume.pdf" download>resume</a></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
-    <img class="perfil" src="./img/perfil.png" alt="">
-  </section>
-  <footer class="footer">
-    <div class="footer-container">
-      <p>Copyright © Erinaldo Junior</p>
-      <div class="redes-grid">
-        <a href="https://www.instagram.com/eri.frontend/" target="_blank"><img src="./img/redes/instagram.png" alt=""></a>
-        <a href="https://github.com/ErinaldoJunior" target="_blank"><img src="./img/redes/github.png" alt=""></a>
-        <a href="https://www.linkedin.com/in/erinaldo-junior-70ab6725b/" target="_blank"><img src="./img/redes/linkedin.png" alt=""></a>
+
+    <nav class="navbar navbar-light custom-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">erinaldo junior.</a>
+        <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
+          <span></span>
+        </a>
+      </div>
+    </nav>
+
+  </header>
+  <section class="section pb-5">
+    <div class="container">
+      <div class="row mb-5 align-items-end">
+        <div class="col" data-aos="fade-up">
+
+          <h2>Hi, I am Erinaldo Junior 👋</h2>
+          <p class="text-dark fs-5 mt-3">I love front end and Ux Design. I value a clean, minimalist and objective design. I seek to specialize and improve my knowledge every day. I have knowledge of some programming languages, such as: CSS, JavaScript and C. I am currently taking the UX Design course at Google and the Programmer course at the IEFP. I am ready to join your team. Let's go?</p>
+        </div>
+
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-md-4 ml-auto order-2" data-aos="fade-up">
+          <h3 class="h3 mb-4">Skills</h3>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>JavaScript</strong>
+                <span class="ml-auto">60%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>CSS3</strong>
+                <span class="ml-auto">80%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>HTML5</strong>
+                <span class="ml-auto">85%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>UX Design</strong>
+                <span class="ml-auto">55%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+
+            <li class="mb-3">
+              <div class="d-flex mb-1">
+                <strong>Bootstrap</strong>
+                <span class="ml-auto">60%</span>
+              </div>
+              <div class="progress custom-progress">
+                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-7 mb-5 mb-md-0 text-center" data-aos="fade-up">
+          <p><img src="img/perfil.png" alt="Image" class="img-fluid" style="width: 400px;"></p>
+        </div>
+
       </div>
 
     </div>
+
+  </section>
+
+  <footer class="footer py-3" role="contentinfo">
+    <div class="container">
+      <div class="row align-items-center text-center">
+
+        <div class="col-6">
+          <p class="text-dark">&copy; Copyright Erinaldo Junior. All Rights Reserved</p>
+        </div>
+        <div class="col-6 social">
+          <a href="https://github.com/ErinaldoJunior" target="_blank"><span class="bi bi-github"></span></a>
+          <a href="https://www.instagram.com/eri.frontend/" target="_blank"><span class="bi bi-instagram"></span></a>
+          <a href="https://www.linkedin.com/in/erinaldo-junior-70ab6725b/" target="_blank"><span class="bi bi-linkedin"></span></a>
+        </div>
+
+      </div>
   </footer>
-  <script src="./script/script2.js"></script>
+
+  <script src="./script/script.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="./assets2/js/vendor/jquery-3.2.1.min.js"></script>
+  <script src="./assets2/js/bootstrap.min.js"></script>
+  <script src="./assets2/js/owl.carousel.min.js"></script>
+  <script src="./assets2/js/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets2/js/isotope.pkgd.min.js"></script>
+  <script src="./assets2/js/jquery.nicescroll.min.js"></script>
+  <script src="./assets2/js/circle-progress.min.js"></script>
+  <script src="./assets2/js/pana-accordion.js"></script>
+  <script src="./assets2/js/main.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="./assets/js/main.js"></script>
+
 </body>
