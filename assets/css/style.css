@@ -385,8 +385,8 @@ h6,
 
 .custom-menu {
   display: flex;
-justify-content: end;
-gap: 30px;
+  justify-content: end;
+  gap: 30px;
 }
 
 /* Custom Navbar */
@@ -399,6 +399,14 @@ gap: 30px;
   .custom-navbar>.container {
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-menu {
+    gap: 10px;
+    flex-direction: column;
+    align-items: end;
   }
 }
 
