@@ -517,13 +517,12 @@ ol {
 .pana-accordion-item .pa-text .pa-tag,
 .hero-item .pa-text .pa-tag {
 	display: inline-block;
-	padding: 4px 10px;
-	margin-bottom: 10px;
-	font-size: 12px;
-	color: #2916e0;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 600;
-	background: #f2c438;
+	background: #2916e0;
 	transition: .3s;
 	border-radius: 2px;
 }
@@ -1822,3 +1821,19 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 	color: #b2b2b2;
 	font-weight: 400;
 }
+
+.owl-nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px;
+	top: 30%;
+	position: absolute;
+	width: 100%;
+}
+
+.owl-nav .owl-next span, .owl-nav .owl-prev span {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 140px;
+	font-weight: 700 ;
+}
+
