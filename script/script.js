@@ -31,10 +31,3 @@ function typeWrite(elemento) {
 }
 const titulo = document.querySelector('.titulo-principal');
 typeWrite(titulo);
-
-const myCarouselElement = document.querySelector('#myCarousel');
-
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 10,
-  touch: false,
-});

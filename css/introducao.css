@@ -44,7 +44,8 @@
 @media (max-width: 430px) {
   .titulo-principal {
     font-size: 3rem;
-    place-self: center;
+    align-self: center;
+    text-align: center;
   }
   .container-intro {
     display: grid;

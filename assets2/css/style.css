@@ -514,6 +514,42 @@ ol {
 	top: -50px;
 }
 
+.hero-item .pa-text {
+	background: #0D0D0D;
+	padding: 20px;
+	width: 100%;
+}
+
+.pa-text h3 {
+	color: #f2f2f2;
+}
+
+.pa-text h3 a{
+	color: #F2BF27;
+	font-weight: bold;
+	font-size: 1.5rem;
+
+}
+
+.pa-text h3 a i{
+	color: #f2c438;
+	font-size: 1.5rem;
+}
+
+.hero-item {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: start;
+	text-align: start;
+}
+
 .pana-accordion-item .pa-text .pa-tag,
 .hero-item .pa-text .pa-tag {
 	display: inline-block;
@@ -522,7 +558,7 @@ ol {
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 600;
-	background: #2916e0;
+	background: #F2BF27;
 	transition: .3s;
 	border-radius: 2px;
 }
@@ -639,25 +675,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 	height: 100%;
 }
 
-.hero-item {
-	position: relative;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	text-align: center;
-	padding: 0 15px;
-}
-
-.hero-item .pa-text {
-	padding-left: 0;
-	padding-bottom: 0;
-}
 
 .hero-item .pa-text h4 {
 	display: inline-block;
@@ -1826,7 +1843,7 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 	display: flex;
 	justify-content: space-between;
 	padding: 0 5px;
-	top: 30%;
+	bottom: 30%;
 	position: absolute;
 	width: 100%;
 }
