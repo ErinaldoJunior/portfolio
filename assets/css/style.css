@@ -106,7 +106,7 @@ h6,
   transform: scale(1);
 }
 
-.item .item-wrap>.work-info {
+.item .item-wrap > .work-info {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -120,12 +120,12 @@ h6,
   transition: 0.3s all ease;
 }
 
-.item .item-wrap>.work-info h3 {
+.item .item-wrap > .work-info h3 {
   font-size: 20px;
   margin-bottom: 0;
 }
 
-.item .item-wrap>.work-info span {
+.item .item-wrap > .work-info span {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
@@ -289,7 +289,7 @@ h6,
   font-weight: 600;
 }
 
-.php-email-form .error-message br+br {
+.php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -336,7 +336,7 @@ h6,
 --------------------------------------------------------------*/
 /* Custom Navmenu */
 .custom-navmenu {
-  background: #0D0D0D;
+  background: #0d0d0d;
 }
 
 .custom-navmenu .custom-menu,
@@ -354,7 +354,7 @@ h6,
 .custom-navmenu .custom-menu li a {
   color: #f2f2f2;
   padding: 10px 0px !important;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .custom-navmenu .custom-menu li a:hover {
@@ -396,7 +396,7 @@ h6,
 }
 
 @media (max-width: 780px) {
-  .custom-navbar>.container {
+  .custom-navbar > .container {
     padding-right: 0;
     padding-left: 0;
   }
@@ -436,8 +436,14 @@ h6,
 
 .burger:before,
 .burger:after {
-  transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1), transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1), background-color 1.15s cubic-bezier(0.86, 0, 0.07, 1);
-  -webkit-transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1), background-color 1.15s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    background-color 1.15s cubic-bezier(0.86, 0, 0.07, 1);
+  -webkit-transition: top 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    -webkit-transform 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.35s cubic-bezier(0.23, 1, 0.32, 1),
+    background-color 1.15s cubic-bezier(0.86, 0, 0.07, 1);
   content: "";
 }
 
@@ -488,7 +494,6 @@ h6,
 # Footer
 --------------------------------------------------------------*/
 
-
 .footer a {
   color: #000;
 }
@@ -502,7 +507,7 @@ h6,
   position: relative;
   text-align: center;
   color: #0d1e2d;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .social a span {
