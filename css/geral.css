@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #f2f2f2;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -20,16 +20,14 @@ h3 {
   font-size: 2.125rem;
 }
 
-
 a {
   text-decoration: none;
-  color: #0D0D0D;
+  color: #0d0d0d;
 }
 
 a:hover {
   color: black;
 }
-
 
 ul {
   list-style: none;
@@ -76,7 +74,7 @@ img {
 }
 
 .btn-grad {
-  background-image: linear-gradient( 135deg, #3B2667 10%, #BC78EC 100%);
+  background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);
   text-align: center;
   transition: 0.7s;
   background-size: 200% auto;
@@ -90,4 +88,101 @@ img {
 
 footer {
   margin-top: 120px;
+}
+
+.galeria-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-projetos {
+  display: grid;
+  width: 450px;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  gap: 20px;
+  transition: 0.1s;
+}
+
+.card-projetos:hover {
+  transform: scale(1.03);
+}
+
+.grid-titulo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-column: 1 / 3; /* Isso faz com que ocupe as duas colunas disponíveis */
+}
+
+.descricao-projeto {
+  color: #000;
+  width: 100%;
+  text-align: center;
+  grid-column: 1 / 3; /* Isso faz com que ocupe as duas colunas disponíveis */
+}
+
+.titulo-projeto {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.galeria-imagens img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #0d0d0d;
+  padding: 5px;
+}
+
+#ic_milho {
+  width: 160px;
+  height: 160px;
+  background-color: transparent;
+}
+
+.titulo-projetos {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+  font-family: "Poppins", sans-serif;
+}
+
+.container-galeria {
+  justify-self: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 450px) {
+  .card-projetos {
+    width: 300px;
+  }
+
+  .grid-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .grid-titulo .titulo-projeto {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .conteudo-projetos .galeria-imagens img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    padding: 10px;
+  }
 }
