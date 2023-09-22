@@ -130,7 +130,8 @@ footer {
 
 .titulo-projeto {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 400;
+  text-align: center;
 }
 
 .galeria-imagens img {
@@ -162,6 +163,10 @@ footer {
   margin-bottom: 60px;
 }
 
+.logo {
+  width: 140px;
+}
+
 @media (max-width: 450px) {
   .card-projetos {
     width: 300px;
@@ -176,7 +181,7 @@ footer {
 
   .grid-titulo .titulo-projeto {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: bold;
   }
 
   .conteudo-projetos .galeria-imagens img {
@@ -184,5 +189,9 @@ footer {
     height: 80px;
     border-radius: 10px;
     padding: 10px;
+  }
+
+  .logo {
+    width: 80px;
   }
 }
