@@ -137,9 +137,9 @@ footer {
 .galeria-imagens img {
   width: 120px;
   height: 120px;
-  border-radius: 10px;
-  background-color: #0d0d0d;
-  padding: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #ic_milho {
