@@ -149,10 +149,11 @@ footer {
 }
 
 .titulo-projetos {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 40px;
+  font-weight: 400;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-top: 80px;
   font-family: "Poppins", sans-serif;
 }
