@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Career Connect Case Study — An AI-powered recruitment platform for intelligent candidate-to-job matching.">
+  <title>Career Connect.ai — Case Study | Erinaldo Junior</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/case-study.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">erinaldo<span>.</span></a>
+      <div class="nav-links">
+        <a href="index.html#work">Work</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-overlay" id="overlay">
+    <a href="index.html" class="overlay-link">Home</a>
+    <a href="index.html#work" class="overlay-link">Work</a>
+    <a href="index.html#about" class="overlay-link">About</a>
+    <a href="index.html#contact" class="overlay-link">Contact</a>
+  </div>
+
+  <!-- Case Study Hero -->
+  <section class="cs-hero">
+    <div class="container">
+      <a href="index.html" class="cs-back">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to portfolio
+      </a>
+
+      <div class="cs-hero-content">
+        <div class="cs-hero-logo-row">
+          <img src="img/logos/career-connect.svg" alt="Career Connect" class="cs-logo" style="background:var(--bg-elevated);padding:8px;">
+          <div>
+            <h1 class="hero-reveal">Career Connect<span class="accent">.</span>ai</h1>
+          </div>
+        </div>
+        <p class="cs-hero-tagline hero-reveal-delay">
+          An AI-powered recruitment platform that intelligently matches candidates to job vacancies — helping recruiters find the right talent faster.
+        </p>
+        <div class="cs-hero-meta">
+          <span class="tech-pill">Frontend Developer</span>
+          <span class="tech-pill">Private Project</span>
+          <span class="project-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="10" height="10"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Source code is private
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Numbers -->
+  <section class="cs-stats">
+    <div class="container">
+      <div class="stats-grid stagger">
+        <div class="stat-block">
+          <span class="stat-number">45+</span>
+          <span class="stat-label">UI Components</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-number">4</span>
+          <span class="stat-label">Core Views</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-number">AI</span>
+          <span class="stat-label">Match Engine</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-number">RT</span>
+          <span class="stat-label">Real-Time Polling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-content reveal">
+        <div class="section-header">
+          <span class="label">Overview</span>
+          <h2>The Problem</h2>
+        </div>
+        <div class="cs-text">
+          <p>
+            Recruitment at scale is messy. Recruiters spend hours manually scanning resumes, cross-referencing skills against job requirements, and making gut-call decisions about which candidates to contact. The process is slow, inconsistent, and misses good matches buried in large candidate pools.
+          </p>
+          <p>
+            Career Connect uses AI to flip that process. Instead of recruiters searching for candidates, the system generates ranked matches based on skills overlap, experience relevance, education fit, and other criteria. Recruiters review the AI's suggestions, accept or reject them, and rate accuracy — feeding data back into the system to improve future results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-content reveal">
+        <div class="section-header">
+          <span class="label">Architecture</span>
+          <h2>Tech Stack</h2>
+        </div>
+        <div class="cs-tech-grid">
+          <div class="cs-tech-item">
+            <h4>Next.js 14 + React 18</h4>
+            <p>App Router with static export for optimized delivery. Server-side rendering where needed, client components for interactive features like the match generation UI.</p>
+          </div>
+          <div class="cs-tech-item">
+            <h4>TypeScript</h4>
+            <p>Full type coverage across the codebase — GraphQL queries, Redux state, component props, and API responses all typed end-to-end.</p>
+          </div>
+          <div class="cs-tech-item">
+            <h4>GraphQL + Apollo Client</h4>
+            <p>The data layer runs on GraphQL. Apollo Client handles caching, CSRF-protected queries, optimistic UI updates, and real-time polling for match generation status.</p>
+          </div>
+          <div class="cs-tech-item">
+            <h4>Redux Toolkit</h4>
+            <p>Global state management for user sessions, table configurations, and filter persistence. Keeps the complex filtering and column customization logic predictable.</p>
+          </div>
+          <div class="cs-tech-item">
+            <h4>Radix UI + Tailwind CSS</h4>
+            <p>45+ headless Radix UI primitives styled with Tailwind. Accessible by default — dialogs, popovers, selects, tooltips — all keyboard-navigable and screen-reader friendly.</p>
+          </div>
+          <div class="cs-tech-item">
+            <h4>TanStack Table + Tiptap</h4>
+            <p>Data-heavy views use TanStack React Table for sorting, filtering, pagination, and column customization. Rich notes use Tiptap with mentions and formatting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How AI Matching Works -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-content reveal">
+        <div class="section-header">
+          <span class="label">Core Feature</span>
+          <h2>How AI Matching Works</h2>
+        </div>
+        <div class="cs-features-list">
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">01</div>
+            <div>
+              <h4>Trigger Generation</h4>
+              <p>A recruiter selects a job or candidate and clicks "Generate Matches." The system queues an AI task and begins polling every 2 seconds. There's an 8-hour cooldown per entity and a cap of 5 concurrent generations to manage resource usage.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">02</div>
+            <div>
+              <h4>AI Scoring & Analysis</h4>
+              <p>The backend AI analyzes hard skills, work experience, education, seniority, location preferences, and languages. Each match gets an overall relevance score (0-100), a list of matching vs. missing skills, and a requirements match percentage.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">03</div>
+            <div>
+              <h4>Results & Relevance Breakdown</h4>
+              <p>Matches appear in real time as generation completes. Each result includes an AI-generated explanation of why this candidate fits — with HTML-formatted reasoning that highlights specific experience, skills overlap, and criteria weights.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">04</div>
+            <div>
+              <h4>Decision & Feedback Loop</h4>
+              <p>Recruiters accept, reject, or rate each match. Thumbs-down ratings include structured reasons and custom notes. This feedback trains the AI to improve future match quality — a closed loop between human judgment and machine learning.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-content reveal">
+        <div class="section-header">
+          <span class="label">Features</span>
+          <h2>What I Built</h2>
+        </div>
+        <div class="cs-features-list">
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">01</div>
+            <div>
+              <h4>Advanced Data Tables</h4>
+              <p>Candidates, jobs, and matches are displayed in highly configurable data tables powered by TanStack React Table. Users can sort, filter with boolean operators (AND/OR), toggle column visibility, reorder columns, and save custom filter presets for reuse.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">02</div>
+            <div>
+              <h4>Quick View Panels</h4>
+              <p>A slide-in panel lets recruiters inspect candidate profiles, job requirements, and match details without navigating away from the table. Match generation can be triggered directly from the quick view — keeping the workflow tight.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">03</div>
+            <div>
+              <h4>Rich Text Notes</h4>
+              <p>Recruiters can attach notes to candidates, jobs, and matches using a Tiptap-powered editor with formatting, mentions, and placeholders. Notes persist across sessions and are tied to specific entities.</p>
+            </div>
+          </div>
+          <div class="cs-feature">
+            <div class="cs-feature-number mono">04</div>
+            <div>
+              <h4>Observability</h4>
+              <p>Grafana Faro SDK is integrated for real user monitoring — tracking performance, errors, and user interactions. This gives the team visibility into frontend health without relying solely on backend logs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenges -->
+  <section class="cs-section">
+    <div class="container">
+      <div class="cs-content reveal">
+        <div class="section-header">
+          <span class="label">Deep Dive</span>
+          <h2>Challenges & Solutions</h2>
+        </div>
+        <div class="cs-challenges">
+          <div class="cs-challenge">
+            <h4>Real-Time Match Generation UI</h4>
+            <p>
+              Match generation is asynchronous — it can take seconds to minutes. The challenge was keeping the UI responsive while polling for status updates without creating flicker or stale states. I built a polling system with 2-second intervals, optimistic session-based state to prevent UI jumps on page reloads, and a custom event emitter that notifies other parts of the app when generation completes. The result is a smooth experience where matches appear to stream in naturally.
+            </p>
+          </div>
+          <div class="cs-challenge">
+            <h4>Complex Filtering with Boolean Logic</h4>
+            <p>
+              Recruiters need filters far more powerful than simple dropdowns. The system supports boolean operators (AND/OR) across multiple filter groups, equality and range conditions, and saved filter presets. State management for this was tricky — filters affect GraphQL queries, table rendering, and URL state simultaneously. Redux Toolkit with carefully structured slices keeps everything in sync without performance issues on large datasets.
+            </p>
+          </div>
+          <div class="cs-challenge">
+            <h4>GraphQL State Management at Scale</h4>
+            <p>
+              Apollo Client's cache is powerful but can become unpredictable when mutations affect multiple queries. After a match decision (accept/reject), the cache needs to reflect the change across the matches table, the quick view, the best-match indicator, and the match count chips — all without a full refetch. I used targeted cache updates with writeQuery and carefully scoped refetchQueries to keep the UI consistent while minimizing network requests.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Outcome -->
+  <section class="cs-section cs-outcome">
+    <div class="container">
+      <div class="cs-content reveal">
+        <div class="section-header">
+          <span class="label">Result</span>
+          <h2>In Production</h2>
+        </div>
+        <div class="cs-text">
+          <p>
+            Career Connect is actively used by recruiters to discover and manage candidate matches across open positions. The AI matching system processes real job requirements against real candidate profiles, with human feedback continuously improving match quality.
+          </p>
+          <p>
+            The frontend handles complex data-heavy workflows — advanced filtering, real-time generation polling, rich text editing, and multi-view navigation — while staying fast and accessible. Built with Next.js 14, TypeScript, GraphQL, and a component library of 45+ Radix UI primitives.
+          </p>
+          <p style="margin-top:1.5rem;color:var(--text-muted);font-size:0.9rem;">
+            Source code is private. This case study covers my contributions and the technical challenges involved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Erinaldo Junior</p>
+        <a href="index.html" style="font-size:0.85rem;color:var(--text-secondary);">Back to portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

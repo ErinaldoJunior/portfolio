@@ -1,328 +1,329 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Desenvolvedor e Designer localizado no Porto.">
-  <title>Erinaldo Junior - Portfólio</title>
+  <meta name="description" content="Erinaldo Junior — Full Stack Developer building AI-powered platforms and SaaS products.">
+  <meta property="og:title" content="Erinaldo Junior — Full Stack Developer">
+  <meta property="og:description" content="Building products that solve real problems — from AI-powered recruitment to SaaS scheduling platforms.">
+  <meta property="og:type" content="website">
+  <title>Erinaldo Junior — Full Stack Developer</title>
+
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-   <!--Estilos -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="./assets2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./assets2/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="./assets2/css/themify-icons.css" />
-  <link rel="stylesheet" href="./assets2/css/accordion.css" />
-  <link rel="stylesheet" href="./assets2/css/owl.carousel.min.css" />
-
-  <link rel="stylesheet" href="./assets2/css/style.css" />
-  <link href="./assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-  <header>
-    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-      <div class="container py-3 py-md-4">
-        <div class="row align-items-center">
-          <div class="col">
-            <ul class="custom-menu">
-              <li class="active"><a href="index.html">home</a></li>
-              <li><a href="#work">work</a></li>
-              <li><a href="./about.html">about me</a></li>
-              <li><a href="./resume.pdf" download>resume</a></li>
-            </ul>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">erinaldo<span>.</span></a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" download class="btn-outline">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-overlay" id="overlay">
+    <a href="#work" class="overlay-link">Work</a>
+    <a href="#about" class="overlay-link">About</a>
+    <a href="#contact" class="overlay-link">Contact</a>
+    <a href="resume.pdf" download class="overlay-link">Resume</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="label hero-reveal">Full Stack Developer</p>
+        <h1 class="hero-title hero-reveal-delay">I build things<br>that actually <span class="accent">work</span></h1>
+        <p class="hero-subtitle hero-reveal-delay" style="animation-delay: 0.5s">
+          From AI-powered recruitment platforms to multi-tenant SaaS products — I turn complex ideas into software people rely on every day.
+        </p>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Selected Work</span>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-grid stagger">
+
+        <!-- AgendaX — Featured -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-header">
+            <img src="img/logos/agendax.png" alt="AgendaX" class="project-logo">
+            <div>
+              <h3>AgendaX</h3>
+              <span class="project-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                Production
+              </span>
+            </div>
+          </div>
+          <p class="project-description">
+            A multi-tenant SaaS platform for appointment scheduling — built from scratch as a solo developer. Handles everything from interactive calendar booking and Stripe payments to SMS reminders and role-based dashboards for four distinct user types.
+          </p>
+          <div class="project-tech">
+            <span class="tech-pill">Next.js 15</span>
+            <span class="tech-pill">React 19</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">PostgreSQL</span>
+            <span class="tech-pill">Prisma</span>
+            <span class="tech-pill">Stripe</span>
+            <span class="tech-pill">Tailwind CSS</span>
+          </div>
+          <a href="agendax.html" class="project-link">
+            View Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+        <!-- Career Connect -->
+        <div class="project-card" data-tilt>
+          <div class="project-card-header">
+            <img src="img/logos/career-connect.svg" alt="Career Connect" class="project-logo" style="background:var(--bg-elevated);padding:6px;">
+            <div>
+              <h3>Career Connect<span class="accent">.</span>ai</h3>
+              <span class="project-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Private
+              </span>
+            </div>
+          </div>
+          <p class="project-description">
+            An AI-powered recruitment platform that matches candidates to job vacancies using intelligent scoring algorithms. Recruiters trigger AI-generated matches, review relevance breakdowns, and rate accuracy to continuously improve results.
+          </p>
+          <div class="project-tech">
+            <span class="tech-pill">Next.js 14</span>
+            <span class="tech-pill">React</span>
+            <span class="tech-pill">TypeScript</span>
+            <span class="tech-pill">GraphQL</span>
+            <span class="tech-pill">Apollo Client</span>
+            <span class="tech-pill">Redux Toolkit</span>
+          </div>
+          <a href="career-connect.html" class="project-link">
+            View Case Study
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="tech-section" id="stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Tech Stack</span>
+        <h2>Tools I Use</h2>
+      </div>
+
+      <div class="tech-categories stagger">
+
+        <!-- Frontend -->
+        <div class="tech-category">
+          <h3>Frontend</h3>
+          <div class="tech-list">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+              <span>React</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript">
+              <span>TypeScript</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="Next.js">
+              <span>Next.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="tech-category">
+          <h3>Backend</h3>
+          <div class="tech-list">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+              <span>Python</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" alt="Django">
+              <span>Django</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+              <span>PHP</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">
+              <span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="tech-category">
+          <h3>Mobile</h3>
+          <div class="tech-list">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Native">
+              <span>React Native</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
+              <span>Java</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data & APIs -->
+        <div class="tech-category">
+          <h3>Data & APIs</h3>
+          <div class="tech-list">
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" alt="GraphQL">
+              <span>GraphQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="Prisma">
+              <span>Prisma</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL">
+              <span>SQL</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platforms -->
+        <div class="tech-category">
+          <h3>Platforms</h3>
+          <div class="tech-list">
+            <div class="tech-item">
+              <img src="https://cdn.simpleicons.org/shopify/95BF47" alt="Shopify">
+              <span>Shopify</span>
+            </div>
+            <div class="tech-item">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" alt="WordPress">
+              <span>WordPress</span>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
-
-    <nav class="navbar navbar-light custom-navbar">
-      <div class="container">
-        <a class="navbar-brand fs-4" href="index.html"><img class="logo" src="./img/logos/logo.png" alt="logo"></a>
-        <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-          <span></span>
-        </a>
-      </div>
-    </nav>
-
-  </header>
-
-
-  <section class="container-intro">
-    <h1 class="titulo-principal">Junior Full Stack Developer</h1>
-  </section>
-    <section class="container" id="work">
-      <h1 class="titulo-projetos">Projetos em HTML, CSS, JavaScript</h1>
-      <div class="conteudo-projetos">
-        <div class="container-galeria">
-          <ul class="galeria-imagens">
-            <li>
-              <a href="https://erinaldojunior.github.io/mec-clean" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/logo_mec.png" alt="logo" />
-                  <h2 class="titulo-projeto">Mec Clean</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Projeto realizado utilizando o Bootstrap. Foi um dos primeiros sites que fiz
-                    que foram para o ar. Atualmente está online e em pleno funcionamento.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://erinaldojunior.github.io/paulistafoods" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/logo_paulista.png" alt="logo" />
-                  <h2 class="titulo-projeto">Paulista Foods</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Criado com HTML, CSS e JavaScript. Projeto realizado para o restaurante Paulista Foods.</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://erinaldojunior.github.io/cursoc" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/logo_c.png" alt="logo" />
-                  <h2 class="titulo-projeto">Curso de C</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Projeto realizado em parceria com o formador Igor Lima para o curso em C do IEFP.
-                    Realizado em HTML, CSS e JavaScript.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              
-              <a href="https://erinaldojunior.github.io/basssket" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/logo_basket.png" alt="logo" />
-                  <h2 class="titulo-projeto">Basssket</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Realizado com objetivo de aprimorar os conhecimentos em JavaScript.</p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://erinaldojunior.github.io/yves" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/logo_yves.png" alt="logo" />
-                  <h2 class="titulo-projeto">Yves Pratas</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Projeto de um ecommerce realizado com HTML, CSS e JavaScript. Totalmente autoral,
-                    foi o meu primeiro projeto como front-end.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="container">
-      <h1 class="titulo-projetos" style="padding-top: 60px;">Sites E-commerce</h1>
-      <div class="conteudo-projetos">
-        <div class="container-galeria">
-          <ul class="galeria-imagens">
-            <li>
-              <a href="https://luxosadvancedprofissional.com/" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/luxos1.jpg" alt="logo" />
-                  <h2 class="titulo-projeto">Luxos Advanced Portugal</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Projeto e-commerce criado com a tecnologia Shopify onde foi utilizada a linguagem liquid.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://luxosadvancedfrance.fr/" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/luxos2.png" alt="logo" />
-                  <h2 class="titulo-projeto">Luxos Advanced France</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Projeto e-commerce criado com a tecnologia Shopify onde foi utilizada a linguagem liquid.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.exalteluxe.com/" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/exalte.png" alt="logo" />
-                  <h2 class="titulo-projeto">Exalte Luxe</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Projeto e-commerce criado com a tecnologia Shopify onde foi utilizada a linguagem liquid.
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.msfutebol.com/" target="_blank" class="card-projetos">
-                <div class="grid-titulo">
-                  <img src="./img/logos/msfutebol.png" alt="logo" />
-                  <h2 class="titulo-projeto">Ms Futebol</h2>
-                </div>
-                <div>
-                  <p class="descricao-projeto">Projeto e-commerce criado com a tecnologia Shopify onde foi utilizada a linguagem liquid.
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="container">
-        <h1 class="titulo-projetos" style="padding-top: 60px;">Projetos React Native</h1>
-        <div class="conteudo-projetos">
-          <div class="container-galeria">
-            <ul class="galeria-imagens">
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.erifrontend.milhoapp" target="_blank" class="card-projetos">
-                  <div class="grid-titulo">
-                    <img src="./img/logos/milho.png" alt="logo" />
-                    <h2 class="titulo-projeto">Milho.pt</h2>
-                  </div>
-                  <div>
-                    <p class="descricao-projeto">App criado para uma empresa de agricultura. A app foi criada com o objetivo inicial
-                      de espelhar o site já existente e também para comunicar com o cliente final através de notificações.
-                      No painel de admin é possível setar e apagar notificações. A app tem ligação com o Firebase e atuamente ainda
-                      encontra-se em desenvolvimento.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.erifrontend.minhastarefas" target="_blank" class="card-projetos">
-                  <div class="grid-titulo">
-                    <img src="./img/logos/tarefas.png" alt="logo" />
-                    <h2 class="titulo-projeto">Minhas Tarefas</h2>
-                  </div>
-                  <div>
-                    <p class="descricao-projeto"> Criado com o React Native. O usuário pode criar, editar, concluir e 
-                      apagar tarefas. A informações ficam guardadas no próprio dispositivo do úsuario.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <h1 class="titulo-projetos" style="padding-top: 60px;">Projetos em Java, VB.NET, C/C++</h1>
-        <div class="conteudo-projetos">
-          <div class="container-galeria">
-            <ul class="galeria-imagens">
-              <li>
-                <a href="https://github.com/ErinaldoJunior/gestao-de-mesas" target="_blank" class="card-projetos">
-                  <div class="grid-titulo">
-                    <img src="./img/logos/restaurant.png" alt="logo" />
-                    <h2 class="titulo-projeto">Gestão de Mesas - VB.NET</h2>
-                  </div>
-                  <div>
-                    <p class="descricao-projeto">Software criado para gerir mesas e pedidos em um restaurante.
-                      É possível adicionar novos pratos, remover existentes, gerar relatório de pedidos, entre outras
-                      funcionalidades.
-                    </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.mslojadesporto.msdesporto" target="_blank" class="card-projetos">
-                  <div class="grid-titulo">
-                    <img src="./img/logos/logo_ms.png" alt="logo" />
-                    <h2 class="titulo-projeto">App Ecommerce - Java</h2>
-                  </div>
-                  <div>
-                    <p class="descricao-projeto">App Ecommerce desenvolvida em Java. Foi utilizado com DB o Firebase.</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </section>
-
-    <section class="container">
-        <h1 class="titulo-projetos" style="padding-top: 60px;">Projetos em C#</h1>
-        <div class="conteudo-projetos">
-          <div class="container-galeria">
-            <ul class="galeria-imagens">
-              <li>
-                <a href="https://play.google.com/store/apps/details?id=com.erifrontend.MsDesportoFutebol" target="_blank" class="card-projetos">
-                  <div class="grid-titulo">
-                    <img src="./img/logos/mdfg.png" alt="logo" />
-                    <h2 class="titulo-projeto">MS Futebol Game</h2>
-                  </div>
-                  <div>
-                    <p class="descricao-projeto"> Game criado com a Unity utilizando a linguagem C#.
-                    </p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-    </section>
-
   </section>
 
-  <footer class="footer py-3" role="contentinfo">
+  <!-- About -->
+  <section class="about-section" id="about">
     <div class="container">
-      <div class="row justify-content-between text-center">
-
-        <div class="col-12 col-md-6">
-          <p class="text-dark">&copy; Copyright Erinaldo Junior All Rights Reserved</p>
-        </div>
-        <div class="col-12 col-md-6 social">
-          <a href="https://github.com/ErinaldoJunior" target="_blank"><span class="bi bi-github"></span></a>
-          <a href="https://www.instagram.com/eri.frontend/" target="_blank"><span class="bi bi-instagram"></span></a>
-          <a href="https://www.linkedin.com/in/erinaldo-junior-70ab6725b/" target="_blank"><span class="bi bi-linkedin"></span></a>
-        </div>
-
+      <div class="section-header reveal">
+        <span class="label">About</span>
+        <h2>Who I Am</h2>
       </div>
+
+      <div class="about-content reveal">
+        <div class="about-text">
+          <p>
+            I'm a full stack developer based in Porto, Portugal. I went from shipping Shopify stores and WordPress sites for clients to building entire SaaS platforms from scratch. Along the way I also published Android apps to the Play Store and worked with teams across e-commerce, mobile, and enterprise.
+          </p>
+          <p>
+            These days I'm deep in the TypeScript ecosystem — Next.js, React, PostgreSQL, and the tooling around it. I care about writing clean code, making good product decisions, and shipping things that people actually rely on.
+          </p>
+        </div>
+
+        <div class="about-facts">
+          <div class="fact-row">
+            <span class="fact-label">Location</span>
+            <span class="fact-value">Porto, Portugal</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Languages</span>
+            <span class="fact-value">Portuguese, English</span>
+          </div>
+          <div class="fact-row">
+            <span class="fact-label">Status</span>
+            <span class="fact-value"><span class="status-dot"></span>Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-content reveal">
+        <div class="footer-cta">
+          <h2>Let's work<br>together<span class="accent">.</span></h2>
+          <p style="margin-top:1rem;">Have a project in mind? I'd like to hear about it.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:erifrontend@gmail.com">erifrontend@gmail.com</a>
+          <a href="https://github.com/ErinaldoJunior" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/erinaldo-jr/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Erinaldo Junior</p>
+        <p class="mono" style="font-size:0.75rem;color:var(--text-muted);">Built by hand, not by template.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="./script/script.js"></script>
-  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
-  <script src="./assets2/js-2/vendor/jquery-3.2.1.min.js"></script>
-  <script src="./assets2/js-2/owl.carousel.min.js"></script>
-  <script src="./assets2/js-2/jquery.nicescroll.min.js"></script>
-  <script src="./assets2/js-2/pana-accordion.js"></script>
-  <script src="./assets2/js-2/main.js"></script>
-
-  <script src="./assets/js/main.js"></script>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>

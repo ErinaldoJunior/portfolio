@@ -1,0 +1,246 @@
+/* Case Study Hero */
+.cs-hero {
+  padding: 8rem 0 4rem;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.cs-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  transition: color 0.3s;
+}
+
+.cs-back:hover {
+  color: var(--text-primary);
+}
+
+.cs-hero-content {
+  max-width: 700px;
+}
+
+.cs-hero-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.cs-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+}
+
+.cs-hero-logo-row h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.cs-hero-tagline {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 600px;
+}
+
+.cs-hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Stats */
+.cs-stats {
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-block {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* Content sections */
+.cs-section {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.cs-content .section-header {
+  margin-bottom: 2.5rem;
+}
+
+.cs-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+.cs-text p + p {
+  margin-top: 1.5rem;
+}
+
+/* Tech Grid */
+.cs-tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cs-tech-item {
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.3s;
+}
+
+.cs-tech-item:hover {
+  border-color: var(--accent);
+}
+
+.cs-tech-item h4 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.cs-tech-item p {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+/* Features List */
+.cs-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.cs-feature {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.cs-feature-number {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--accent);
+  flex-shrink: 0;
+  width: 3rem;
+  padding-top: 0.15rem;
+}
+
+.cs-feature h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.cs-feature p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Challenges */
+.cs-challenges {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.cs-challenge {
+  padding-left: 2rem;
+  border-left: 2px solid var(--surface-border);
+  transition: border-color 0.3s;
+}
+
+.cs-challenge:hover {
+  border-left-color: var(--accent);
+}
+
+.cs-challenge h4 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.cs-challenge p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  max-width: 680px;
+}
+
+/* Outcome */
+.cs-outcome {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-tech-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-feature {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cs-feature-number {
+    width: auto;
+  }
+
+  .cs-hero {
+    padding: 6rem 0 3rem;
+  }
+
+  .cs-hero-logo-row {
+    gap: 1rem;
+  }
+
+  .cs-logo {
+    width: 48px;
+    height: 48px;
+  }
+}

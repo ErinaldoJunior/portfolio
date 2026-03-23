@@ -1,0 +1,91 @@
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered children */
+.stagger > * {
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+}
+
+.stagger.visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.stagger.visible > *:nth-child(1) { transition-delay: 0s; }
+.stagger.visible > *:nth-child(2) { transition-delay: 0.08s; }
+.stagger.visible > *:nth-child(3) { transition-delay: 0.16s; }
+.stagger.visible > *:nth-child(4) { transition-delay: 0.24s; }
+.stagger.visible > *:nth-child(5) { transition-delay: 0.32s; }
+.stagger.visible > *:nth-child(6) { transition-delay: 0.4s; }
+.stagger.visible > *:nth-child(7) { transition-delay: 0.48s; }
+.stagger.visible > *:nth-child(8) { transition-delay: 0.56s; }
+
+/* Hero text reveal */
+.hero-reveal {
+  clip-path: inset(0 0 100% 0);
+  animation: clipReveal 0.9s var(--ease-in-out) forwards;
+}
+
+.hero-reveal-delay {
+  clip-path: inset(0 0 100% 0);
+  animation: clipReveal 0.9s var(--ease-in-out) 0.3s forwards;
+}
+
+@keyframes clipReveal {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Card tilt glow */
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    var(--accent-dim),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.4s;
+  pointer-events: none;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+/* Nav entrance */
+.nav {
+  animation: fadeDown 0.6s var(--ease-out) 0.5s both;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Link arrow bounce */
+@keyframes arrowBounce {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(4px); }
+}
